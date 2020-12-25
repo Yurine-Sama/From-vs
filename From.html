@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <!-- <form action="">
+      ชื่อ
+      <input type="text" name="fname" id="fname" pattern="[A-Za-z]{1,50}" maxlength="30" required>
+
+      <input type="text" name="lname" id="lname" pattern="[A-Za-z]{1,50}" maxlength="30" required>
+
+      <br>
+      GPA
+      <input type="number" name="gpa" id="gpa" min="0.00" max="4.00"  required>
+
+      <br>
+      Email 
+      <input type="email" name="email" id="email" pattern="(mju[0-9]{10}@mju.ac.th|MJU[0-9]{10}@mju.ac.th)" 
+      placeholder="Mju62xxxxxxxx@mju.ac.th"  required>
+
+
+
+      <input type="submit" value="ตกลง">
+  
+  
+
+
+
+    </form> -->
+
+    <!--Name-->
+
+    
+    <div class="container">
+      <form action="" class="row g-3 needs-validation"novalidate>
+        <div class="col-md-5 position-relative">
+          <label for="inputname" class="form-label">ชื่อ</label>
+          <input type="text" class="form-control" pattern="[A-Za-z]" maxlength="20"  placeholder="First name" aria-label="First name" required>
+          <div class="invalid-tooltip">
+            กรุณาเขียนชื่อ.
+          </div>
+        </div>
+        
+        <div class="col-md-5 position-relative">
+          <label for="inputname" class="form-label">นามสกุล</label>
+          <input type="text" class="form-control" placeholder="Last name" pattern="[A-Za-z]" maxlength="20" aria-label="Last name" required>
+          <div class="invalid-tooltip">
+            กรุณาเขียนนามสกุล.
+          </div>
+        </div>
+        <div class="col-auto ">
+          <label for="inputState" class="form-label">ภาคเรียน</label>
+          <select class="form-select" id="autoSizingSelect">
+            <option selected>1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-5 position-relative">
+          <label for="idstudent" class="form-label">รหัสนศ</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="62xxxxxxxx" required>
+          <div class="invalid-tooltip">
+            กรุณากรอกรหัสนศ.
+          </div>
+        </div>
+        <div class="col-12 col-md-5 position-relative">
+          <label for="phonenum" class="form-label">เบอร์โทร</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="012-456-789" required>
+          <div class="invalid-tooltip">
+            กรุณากรอกเบอร์โทร.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="branch" class="form-label">สาขาวิชา</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-6">
+          <label for="band" class="form-label">คณะ</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">หลักสูตรปริญาตรี</label>
+          <select id="inputState" class="form-select">
+            <option selected> 4-5 ปี</option>
+            <option>4 ปีเทียบเข้าเรียน(2ปี)</option>
+            <option>ภาคปกติ</option>
+            <option>ภาคสมทบ</option>
+          </select>
+        </div>
+        <div class="form-floating position-relative">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+          <label for="floatingTextarea2">มีความประสงค์จะขอลาพักการศึกษาเนื่องจาก</label>
+          <div class="invalid-tooltip">
+            กรอกความประสงค์จะลาพัก
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">ตกลง</button>
+        </div>
+      </form>
+
+
+
+      <script>
+        (function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+      </script>
+
+  </body>
+</html>
