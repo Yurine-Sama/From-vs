@@ -47,10 +47,8 @@
     </form> -->
 
     <!--Name-->
-
-    
     <div class="container">
-      <form action="" class="row g-3 needs-validation"novalidate>
+      <form action="" class="row row-col-4 g-3 needs-validation"novalidate>
         <div class="col-md-5 position-relative">
           <label for="inputname" class="form-label">ชื่อ</label>
           <input type="text" class="form-control" pattern="[A-Za-z]" maxlength="20"  placeholder="First name" aria-label="First name" required>
@@ -66,12 +64,17 @@
             กรุณาเขียนนามสกุล.
           </div>
         </div>
-        <div class="col-auto ">
+        <div class="col-sm-1 ">
           <label for="inputState" class="form-label">ภาคเรียน</label>
           <select class="form-select" id="autoSizingSelect">
             <option selected>1</option>
             <option value="2">2</option>
           </select>
+        </div>
+        <div class="col">
+          <input  type="date" id="start" name="trip-start"
+          value="2020-012-21"
+          min="2020-01-01" max="20-12-31" >
         </div>
         <div class="col-12 col-md-5 position-relative">
           <label for="idstudent" class="form-label">รหัสนศ</label>
@@ -115,8 +118,6 @@
           <button type="submit" class="btn btn-primary">ตกลง</button>
         </div>
       </form>
-
-
 
       <script>
         (function () {
