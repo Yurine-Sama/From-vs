@@ -122,24 +122,7 @@
         </div>
         <div class="col-md-6">
           <label for="band" class="form-label">คณะ</label>
-          <select>
-            <option value="---เลือกคณะ---">---เลือกคณะ---</option>
-            <option value="คณะผลิตกรรมการเกษตร">คณะผลิตกรรมการเกษตร</option>
-            <option value="คณะสัตวศาสตร์และเทคโนโลยี">คณะสัตวศาสตร์และเทคโนโลยี</option>
-            <option value="คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม">คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม</option>
-            <option value="คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
-            <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
-            <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
-            <option value="คณะสารสนเทศและการสื่อสาร">คณะสารสนเทศและการสื่อสาร</option>
-            <option value="คณะวิศวกรรมและอุตสาหกรรมเกษตร">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
-            <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
-            <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
-            <option value="คณะพัฒนาการท่องเที่ยว">คณะพัฒนาการท่องเที่ยว</option>
-            <option value="วิทยาลัยบริหารศาสตร์">วิทยาลัยบริหารศาสตร์</option>
-            <option value="วิทยาลัยพลังงานทดแทน">พลังงานทดแทน</option>
-            <option value="แม่โจ้-แพร่ เฉลิมพระเกียรติ">แม่โจ้-แพร่ เฉลิมพระเกียรติ </option>
-            <option value="แม่โจ้-ชุมพร">แม่โจ้-ชุมพร</option>
-          </select>
+          <input type="text" class="form-control" id="inputCity">
         </div>
         <div class="col-md-4">
           <label for="inputState" class="form-label">หลักสูตรปริญาตรี</label>
@@ -157,9 +140,50 @@
             กรอกความประสงค์จะลาพัก
           </div>
         </div>
+          <!--upload-->
+          <div class="row g-2 ">
+            <div class="col ">
+                <label for="band" class="form-label">(1)ข้อแสดงความนับถือ (นักศึกษา)</label>
+                <input type="file" class="form-control" id="inputGroupFile02">
+            </div>
+            <div class="col">
+                <label for="band" class="form-label">(2)ความเห็นหัวหนัากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ</label>
+                <input type="file" class="form-control" id="inputGroupFile02">
+            </div>
+            <div class="col">
+                <label for="band" class="form-label">(3)ความเห็นผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ</label>
+                <input type="file" class="form-control" id="inputGroupFile02">
+            </div>
+          </div>
+          <div class="row g-3 ">
+            <div class="col ">
+                <label for="band" class="form-label">(4)ความเห็นอาจารย2ที่ปรึกษา</label>
+                <input type="file" class="form-control" id="inputGroupFile02">
+            </div>
+            <div class="col">
+                <label for="band" class="form-label">(5)ความเห็นประธานคณะกรรมการประจําหลักสูตร</label>
+                <input type="file" class="form-control" id="inputGroupFile02">
+            </div>
+            <div class="col">
+                <label for="band" class="form-label">(6)ความเห็นคณบดี</label>
+                <input type="file" class="form-control" id="inputGroupFile02">
+            </div>
+            <div class="row g-3">
+                <div class="col">
+                        <label for="band" class="form-label">(7)งานเงินรายได้กองคลัง ชั้น 2 อาคารอิงคศรีกสิการได้รับชําระเงินจํานวน</label>
+                        <input type="file" class="form-control" id="inputGroupFile02">
+                    </div>
+                    <div class="col">
+                        <label for="band" class="form-label">(8)สําหรับเจ้าหน้าที่บันทึกลงฐานข้อมูล ได้บันทึกการข้อมูลดังกล่าว</label>
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                </div>
+          </div>
+         <!--end upload-->
         <div class="col-12">
           <button type="submit" class="btn btn-primary">ตกลง</button>
         </div>
+
+        
       </form>
 
       <!--script-->
