@@ -1,216 +1,379 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
     <link rel="stlesheet" href="./IMG/">
-  </head>
-  <body>
-    <!-- <form action="">
+</head>
 
-      ชื่อ
-      <input type="text" name="fname" id="fname" pattern="[A-Za-z]{1,50}" maxlength="30" required>
-
-      <input type="text" name="lname" id="lname" pattern="[A-Za-z]{1,50}" maxlength="30" required>
-
-      <br>
-      GPA
-      <input type="number" name="gpa" id="gpa" min="0.00" max="4.00"  required>
-
-      <br>
-      Email 
-      <input type="email" name="email" id="email" pattern="(mju[0-9]{10}@mju.ac.th|MJU[0-9]{10}@mju.ac.th)" 
-      placeholder="Mju62xxxxxxxx@mju.ac.th"  required>
-
-
-
-      <input type="submit" value="ตกลง">
-  
-  
-
-
-
-    </form> -->
+<body>
 
     <!--Nav bar-->
-      <div class="container">
+    <div class="container">
         <div class="row ">
-          <div class="col-sm">
-            <img src="/IMG/มหาวิทยาลัยแม่โจ้_edit.png" alt="MJU logo" style="width: 6em;">
-          </div>
-          <div class="col-sm">
-            <h1>คำร้องขอลาพักการศึกษา</h>
-              <p class="text-center" style="font-size: 15px;">(สําหรับนักศึกษาที่ได้ศึกษามาแล้ว ไม่น้อยกว่าหนึ่งภาคการศึกษา)</p>
-          </div>
-          <div class="col-sm">
-          </div>
+            <div class="col-sm">
+                <img src="/IMG/มหาวิทยาลัยแม่โจ้_edit.png" alt="MJU logo" style="width: 6em;">
+            </div>
+            <div class="col-sm">
+                <h1>คำร้องขอลาพักการศึกษา</h>
+                    <p class="text-center" style="font-size: 15px;">(สําหรับนักศึกษาที่ได้ศึกษามาแล้ว
+                        ไม่น้อยกว่าหนึ่งภาคการศึกษา)</p>
+            </div>
+            <div class="col-sm">
+                <h2 class="text-end">มจท.10</h2>
+            </div>
         </div>
-      </div>
+    </div>
+
     <!--end Nav bar-->
     <!--Name-->
-    
+
     <div class="container">
-      <form action="" class="row row-col-4 g-3 needs-validation"novalidate>
-        <!--คำนำหน้า-->
-        <div class="col-md-1">
-          <label for="validationDefault04" class="form-label">คำนำหน้าชื่อ</label>
-          <select class="form-select" id="validationDefault04" required>
-            <option selected disabled value="">นาย</option>
-            <option>นาง</option>
-            <option>นางสาว</option>
-          </select>
-        </div>
-        <div class="col-md-4 position-relative">
-          <label for="inputfname" class="form-label">ชื่อ</label>
-          <input type="text"  class="form-control" pattern="[A-Za-z]" maxlength="20"  placeholder="First name" aria-label="First name" required>
-          <div class="invalid-tooltip">
-            กรุณาเขียนชื่อ.
-          </div>
-        </div>    
-        <div class="col-md-4 position-relative">
-          <label for="inputlname" class="form-label">นามสกุล</label>
-          <input type="text"  class="form-control" pattern="[A-Za-z]" maxlength="20"  placeholder="last name" aria-label="last name" required>
-          <div class="invalid-tooltip">
-            กรุณาเขียนชื่อ.
-          </div>
-        </div>    
-        <div class="col-sm-1 ">
-          <label for="inputState" class="form-label">ภาคเรียน</label>
-          <select class="form-select" id="autoSizingSelect">
-            <option selected>1</option>
-            <option value="2">2</option>
-          </select>
-        </div>
-        <div class="col-sm-1">
-          <label for="today" class="form-label">วัน/เดือน/ปี</label>
-          <input  type="date" id="date" name="trip-start"
-          value="2020-012-21"
-          min="2020-01-01" max="20-12-31" required>
-        </div>
-        <div class="col-12 col-md-5 position-relative">
-          <label for="idstudent" class="form-label">รหัสนศ</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="62xxxxxxxx" pattern="[0-9]+" maxlength="10"  required>
-          <div class="invalid-tooltip">
-            กรุณากรอกรหัสนศ.
-          </div>
-        </div>
-        <div class="col-12 col-md-5 position-relative">
-          <label for="phonenum" class="form-label">เบอร์โทร</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="012346789" pattern="[0-9]+" maxlength="10" required>
-          <div class="invalid-tooltip">
-            กรุณากรอกเบอร์โทร.
-          </div>
-        </div>
-        <div class="col-md-6">
-          <label for="branch" class="form-label">สาขาวิชา</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-6">
-          <label for="band" class="form-label">คณะ</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">หลักสูตรปริญาตรี</label>
-          <select id="inputState" class="form-select">
-            <option selected> 4-5 ปี</option>
-            <option>4 ปีเทียบเข้าเรียน(2ปี)</option>
-            <option>ภาคปกติ</option>
-            <option>ภาคสมทบ</option>
-          </select>
-        </div>
-        <div class="form-floating position-relative">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"  required></textarea>
-          <label for="floatingTextarea2">มีความประสงค์จะขอลาพักการศึกษาเนื่องจาก</label>
-          <div class="invalid-tooltip">
-            กรอกความประสงค์จะลาพัก
-          </div>
-        </div>
-          <!--upload-->
-          <div class="row g-2 ">
-            <div class="col ">
-                <label for="band" class="form-label">(1)ข้อแสดงความนับถือ (นักศึกษา)</label>
-                <input type="file" class="form-control" id="inputGroupFile02">
+        <form action="" class="row row-col-4 g-3 needs-validation" novalidate>
+            <!--คำนำหน้า-->
+            <div class="col-md-1">
+                <label for="validationDefault04" class="form-label">คำนำหน้าชื่อ</label>
+                <select class="form-select" id="validationDefault04">
+                    <option selected disabled value="">นาย</option>
+                    <option>นาง</option>
+                    <option>นางสาว</option>
+                </select>
             </div>
-            <div class="col">
-                <label for="band" class="form-label">(2)ความเห็นหัวหนัากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ</label>
-                <input type="file" class="form-control" id="inputGroupFile02">
+            <div class="col-md-4 position-relative">
+                <label for="inputfname" class="form-label">ชื่อ</label>
+                <input type="text" class="form-control" pattern="[A-Za-z]" maxlength="20" placeholder="First name"
+                    aria-label="First name" required>
+                <div id="inputfname" class="invalid-feedback">
+                    กรุณาเขียนชื่อ.
+                </div>
             </div>
-            <div class="col">
-                <label for="band" class="form-label">(3)ความเห็นผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ</label>
-                <input type="file" class="form-control" id="inputGroupFile02">
+            <div class="col-md-4 position-relative">
+                <label for="inputlname" class="form-label">นามสกุล</label>
+                <input type="text" class="form-control" pattern="[A-Za-z]" maxlength="20" placeholder="last name"
+                    aria-label="last name" required>
+                <div id="inputlname" class="invalid-feedback">
+                    กรุณากรอกนามสกุล.
+                </div>
             </div>
-          </div>
-          <div class="row g-3 ">
-            <div class="col ">
-                <label for="band" class="form-label">(4)ความเห็นอาจารย2ที่ปรึกษา</label>
-                <input type="file" class="form-control" id="inputGroupFile02">
+            <div class="col-sm-1 ">
+                <label for="inputState" class="form-label">ภาคเรียน</label>
+                <select class="form-select" id="autoSizingSelect">
+                    <option selected>1</option>
+                    <option value="2">2</option>
+                </select>
             </div>
-            <div class="col">
-                <label for="band" class="form-label">(5)ความเห็นประธานคณะกรรมการประจําหลักสูตร</label>
-                <input type="file" class="form-control" id="inputGroupFile02">
+            <div class="col-sm-1 position-relative">
+                <label for="today" class="form-label">วัน/เดือน/ปี</label>
+                <input type="date" id="date" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31"
+                    required>
+                <div id="today" class="invalid-feedback">
+                    กรุณาเลือกวันที่.
+                </div>
             </div>
-            <div class="col">
-                <label for="band" class="form-label">(6)ความเห็นคณบดี</label>
-                <input type="file" class="form-control" id="inputGroupFile02">
+
+            <div class="col-12 col-md-5 position-relative">
+                <label for="idstudent" class="form-label">รหัสนศ</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="62xxxxxxxx" pattern="[0-9]+"
+                    maxlength="10" required>
+                <div id="idstudent" class="invalid-feedback">
+                    กรุณากรอกรหัสนศ.
+                </div>
             </div>
-            <div class="row g-3">
+            <div class="col-12 col-md-5 position-relative">
+                <label for="phonenum" class="form-label">เบอร์โทร</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="012346789" pattern="[0-9]+"
+                    maxlength="10" required>
+                <div id="phonenum" class="invalid-feedback">
+                    กรุณากรอกเบอร์โทร.
+                </div>
+            </div>
+            <div class="col-sm-2 position-relative">
+                <label for="inputy" class="form-label">ปีการศึกษา</label>
+                <input type="text" class="form-control" pattern="[0-9]+" maxlength="4" placeholder="25xx"
+                    aria-label="ปีการศึกษา" required>
+                <div id="inputy" class="invalid-feedback">
+                    กรุณากรอกปีการศึกษา.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="branch" class="form-label">สาขาวิชา</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-6">
+                <label for="band" class="form-label">คณะ</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">หลักสูตรปริญาตรี</label>
+                <select id="inputState" class="form-select">
+                    <option selected> 4-5 ปี</option>
+                    <option>4 ปีเทียบเข้าเรียน(2ปี)</option>
+                    <option>ภาคปกติ</option>
+                    <option>ภาคสมทบ</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">เรียน คณบดีคณะ</label>
+                <select id="inputState" class="form-select">
+                    <option selected> คณะผลิตกรรมการเกษตร </option>
+                    <option>คณะสัตวศาสตร์และเทคโนโลยี</option>
+                    <option>คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม</option>
+                    <option>คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                    <option>คณะบริหารธุรกิจ</option>
+                    <option>คณะเศรษฐศาสตร์</option>
+                    <option>คณะสารสนเทศและการสื่อสาร</option>
+                    <option>คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                    <option>คณะวิทยาศาสตร์</option>
+                    <option>คณะศิลปศาสตร์</option>
+                    <option>คณะพัฒนาการท่องเที่ยว</option>
+                    <option>วิทยาลัยบริหารศาสตร์</option>
+                    <option>วิทยาลัยพลังงานทดแทน</option>
+                    <option>แม่โจ้-แพร่ เฉลิมพระเกียรติ</option>
+                    <option>แม่โจ้-ชุมพร</option>
+                </select>
+            </div>
+            <div class="form-floating position-relative">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px" required></textarea>
+                <label for="floatingTextarea2">มีความประสงค์จะขอลาพักการศึกษาเนื่องจาก</label>
+                <div class="invalid-feedback">
+                    กรอกความประสงค์จะลาพัก
+                </div>
+            </div>
+            <!--upload-->
+            <div class="row g-2 position-relative ">
                 <div class="col">
-                        <label for="band" class="form-label">(7)งานเงินรายได้กองคลัง ชั้น 2 อาคารอิงคศรีกสิการได้รับชําระเงินจํานวน</label>
-                        <input type="file" class="form-control" id="inputGroupFile02">
+                    <label for="band" class="form-label">(1)ขอแสดงความนับถือ (นักศึกษา) </label>
+                    <input type="file" class="form-control" id="inputGroupFile02" required>
+                    <div id="band" class="invalid-feedback">
+                        กรุณาอัปโหลดรูป.
+                    </div>
+                </div>
+                <div class="col ">
+                    <label for="band" class="form-label">(2)ความเห็นหัวหนัากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ</label>
+                    <input type="file" class="form-control" id="inputGroupFile02" required>
+                    <div id="band" class="invalid-feedback">
+                        กรุณาอัปโหลดรูป.
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="band" class="form-label">(3)ความเห็นผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ</label>
+                    <input type="file" class="form-control" id="inputGroupFile02" required>
+                    <div id="band" class="invalid-feedback">
+                        กรุณาอัปโหลดรูป.
+                    </div>
+                </div>
+            </div>
+            <!--ยังไม่ได้ใส่แจ้งเตือน-->
+            <div class="row g-2 position-relative">
+                <div class="col ">
+                    <label for="band" class="form-label">(4)ความเห็นอาจารย2ที่ปรึกษา</label>
+                    <input type="file" class="form-control" id="inputGroupFile02" required>
+
+                </div>
+                <div class="col">
+                    <label for="band" class="form-label">(5)ความเห็นประธานคณะกรรมการประจําหลักสูตร</label>
+                    <input type="file" class="form-control" id="inputGroupFile02" required>
+
+                </div>
+                <div class="col">
+                    <label for="band" class="form-label">(6)ความเห็นคณบดี</label>
+                    <input type="file" class="form-control" id="inputGroupFile02" required>
+                </div>
+            <!--end-->
+                <div class="row g-2 position-relative">
+                    <div class="col">
+                        <label for="band" class="form-label">(7)งานเงินรายได้กองคลัง ชั้น 2
+                            อาคารอิงคศรีกสิการได้รับชําระเงินจํานวน</label>
+                        <input type="file" class="form-control" id="inputGroupFile02" required>
+                        <div id="band" class="invalid-feedback">
+                            กรุณาอัปโหลดรูป.
+                        </div>
                     </div>
                     <div class="col">
-                        <label for="band" class="form-label">(8)สําหรับเจ้าหน้าที่บันทึกลงฐานข้อมูล ได้บันทึกการข้อมูลดังกล่าว</label>
-                    <input type="file" class="form-control" id="inputGroupFile02">
+                        <label for="band" class="form-label">(8)สําหรับเจ้าหน้าที่บันทึกลงฐานข้อมูล
+                            ได้บันทึกการข้อมูลดังกล่าว</label>
+                        <input type="file" class="form-control" id="inputGroupFile02" required>
+                        <div id="band" class="invalid-feedback">
+                            กรุณาอัปโหลดรูป.
+                        </div>
+                    </div>
+                    <p>
+                        พร้อมนี้ได้แนบใบยินยอมขอลาพักการศึกษาจากผู้ปกครอง / ใบรับรองแพทย2 / เอกสารอื่นๆ
+                        จึงเรียนมาเพื่อโปรดพิจารณา
+                    </p>
                 </div>
-          </div>
-         <!--end upload-->
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">ตกลง</button>
-        </div>
+                <!--end upload-->
 
-        
-      </form>
+                <!--ผู้ปกครอง-->
+                <div class="container position-relative">
+                    <div class="row g-2">
+                        <div class="col">
+                            <h1 class="text-center">คํารับรองของผู้ปกครอง</h>
+                        </div>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-sm-2">
+                            <label for="้housenum" class="form-label">บ้านเลขที่</label>
+                            <input type="text" class="form-control" id="validationDefault01" pattern="[0-9]+" required>
+                            <div id="housenum" class="invalid-feedback">
+                                กรุณากรอกบ้านเลขที่.
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <label for="mutee" class="form-label">หมู่ที่</label>
+                            <input type="text" class="form-control" id="validationDefault01" pattern="[0-9]+" required>
+                            <div id="mutee" class="invalid-feedback">
+                                กรุณากรอกหมู่ที่.
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <label for="um" class="form-label">ตำบล</label>
+                            <input type="text" class="form-control" id="validationDefault01" required>
+                            <div id="um" class="invalid-feedback">
+                                กรุณากรอกตำบล.
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="hum" class="form-label">อำเภอ</label>
+                            <input type="text" class="form-control" id="validationDefault01" required>
+                            <div id="hum" class="invalid-feedback">
+                                กรุณากรอกอำเภอ.
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="jun" class="form-label">จังหวัด</label>
+                            <input type="text" class="form-control" id="validationDefault01" required>
+                            <div id="jun" class="invalid-feedback">
+                                กรุณากรอกจังหวัด.
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="pai" class="form-label">รหัสไปรษณีย์</label>
+                            <input type="text" class="form-control" id="validationDefault01" pattern="[0-9]+" required>
+                            <div id="pai" class="invalid-feedback">
+                                กรุณากรอกรหัสไปรษณีย์.
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="pai" class="form-label">โทรศัพท์</label>
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="123456789"
+                                pattern="[0-9]+,(\w)+" maxlength="10" required>
+                            <div id="pai" class="invalid-feedback">
+                                กรุณากรอกหมายเลขโทรศัพท์.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">เรียน คณบดีคณะ</label>
+                            <select id="inputState" class="form-select">
+                                <option selected> คณะผลิตกรรมการเกษตร </option>
+                                <option>คณะสัตวศาสตร์และเทคโนโลยี</option>
+                                <option>คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม</option>
+                                <option>คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                                <option>คณะบริหารธุรกิจ</option>
+                                <option>คณะเศรษฐศาสตร์</option>
+                                <option>คณะสารสนเทศและการสื่อสาร</option>
+                                <option>คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                                <option>คณะวิทยาศาสตร์</option>
+                                <option>คณะศิลปศาสตร์</option>
+                                <option>คณะพัฒนาการท่องเที่ยว</option>
+                                <option>วิทยาลัยบริหารศาสตร์</option>
+                                <option>วิทยาลัยพลังงานทดแทน</option>
+                                <option>แม่โจ้-แพร่ เฉลิมพระเกียรติ</option>
+                                <option>แม่โจ้-ชุมพร">แม่โจ้-ชุมพร</option>
+                            </select>
+                        </div>
+                        <div class="row g-2 position-relative">
+                            <div class="col-md-1">
+                                <label for="validationDefault04" class="form-label">ตามที่</label>
+                                <select class="form-select" id="validationDefault04">
+                                    <option selected disabled value="">นาย</option>
+                                    <option>นาง</option>
+                                    <option>นางสาว</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-5">
+                                <label for="inputfname" class="form-label">ชื่อ</label>
+                                <input type="text" class="form-control" pattern="[A-Za-z]" maxlength="20"
+                                    placeholder="First name" aria-label="First name" required>
+                                <div id="inputfname" class="invalid-feedback">
+                                    กรุณาเขียนชื่อ.
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <label for="inputlname" class="form-label">นามสกุล</label>
+                                <input type="text" class="form-control" pattern="[A-Za-z]" maxlength="20"
+                                    placeholder="last name" aria-label="last name" required>
+                                <div id="inputlname" class="invalid-feedback">
+                                    กรุณาเขียนนามสกุล.
+                                </div>
 
-      <!--script-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">ตกลง</button>
+                </div>
 
-      <script>
-        (function () {
-  'use strict'
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
+                <!--from ผู้ปกครอง-->
 
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
 
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
-      </script>
 
-      <!--end script-->
+        </form>
 
-  </body>
+        <!--script-->
+
+
+        <script>
+            (function () {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })()
+        </script>
+
+
+        <!--end script-->
+
+</body>
+
 </html>
