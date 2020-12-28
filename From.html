@@ -203,7 +203,7 @@
                     <label for="band" class="form-label">(6)ความเห็นคณบดี</label>
                     <input type="file" class="form-control" id="inputGroupFile02" required>
                 </div>
-            <!--end-->
+                <!--end-->
                 <div class="row g-2 position-relative">
                     <div class="col">
                         <label for="band" class="form-label">(7)งานเงินรายได้กองคลัง ชั้น 2
@@ -308,7 +308,7 @@
                         </div>
                         <div class="row g-2 position-relative">
                             <div class="col-md-1">
-                                <label for="validationDefault04" class="form-label">ตามที่</label>
+                                <label for="validationDefault04" class="form-label">ตามที่(นักศึกษา)</label>
                                 <select class="form-select" id="validationDefault04">
                                     <option selected disabled value="">นาย</option>
                                     <option>นาง</option>
@@ -330,25 +330,100 @@
                                 <div id="inputlname" class="invalid-feedback">
                                     กรุณาเขียนนามสกุล.
                                 </div>
-
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 position-relative">
+                            <label for="idstudent" class="form-label">รหัสนศ</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="62xxxxxxxx"
+                                pattern="[0-9]+" maxlength="10" required>
+                            <div id="idstudent" class="invalid-feedback">
+                                กรุณากรอกรหัสนศ.
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5 position-relative">
+                            <label for="phonenum" class="form-label">เบอร์โทร</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="012346789"
+                                pattern="[0-9]+" maxlength="10" required>
+                            <div id="phonenum" class="invalid-feedback">
+                                กรุณากรอกเบอร์โทร.
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4 ">
+                        <label for="inputState" class="form-label">หลักสูตรปริญาตรี</label>
+                        <select id="inputState" class="form-select">
+                            <option selected> 4-5 ปี</option>
+                            <option>4 ปีเทียบเข้าเรียน(2ปี)</option>
+                            <option>ภาคปกติ</option>
+                            <option>ภาคสมทบ</option>
+                        </select>
+                    </div>
                 </div>
+                <div class="form-floating position-relative">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px" required></textarea>
+                    <label
+                        for="floatingTextarea2">ซึ่งเป็นนักศึกษาในความปกครองของข้าพเจ้ามีความประสงค์จะขอลาพักการศึกษาเนื่องจาก</label>
+                    <div class="invalid-feedback">
+                        กรุณากรอกความประสงค์จะลาพัก
+                    </div>
+                </div>
+                <div class="row g-1 position-relative">
+                    <div class="col-md-1">
+                        <label for="validationDefault04" class="form-label">ข้าพเจ้า</label>
+                        <select class="form-select" id="validationDefault04">
+                            <option selected disabled value="">นาย</option>
+                            <option>นาง</option>
+                            <option>นางสาว</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-5">
+                        <label for="inputfname" class="form-label">ชื่อ</label>
+                        <input type="text" class="form-control" pattern="[A-Za-z]" maxlength="20"
+                            placeholder="First name" aria-label="First name" required>
+                        <div id="inputfname" class="invalid-feedback">
+                            กรุณาเขียนชื่อ.
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <label for="inputlname" class="form-label">นามสกุล</label>
+                        <input type="text" class="form-control" pattern="[A-Za-z]" maxlength="20"
+                            placeholder="last name" aria-label="last name" required>
+                        <div id="inputlname" class="invalid-feedback">
+                            กรุณาเขียนนามสกุล.
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2 position-relative ">
+                    <div class="col">
+                        <p>ผู้ปกครองของนักศึกษาดังกล่าวข้างต้น ได้รับทราบการขอลาพักการศึกษาแล้ว
+                            และยินดีให้ปฏิบัติตามความประสงค์ของนักศึกษา
+                            จึงเรียนมาเพื่อโปรดทราบ ขอแสดงความนับถือ </p>
+                        <label for="band" class="form-label">ขอแสดงความนับถือ (ผู้ปกครองนักศึกษา) </label>
+                        <input type="file" class="form-control" id="inputGroupFile02" required>
+                        <div id="band" class="invalid-feedback">
+                            กรุณาอัปโหลดรูป.
+                        </div>
+                    </div>
+                </div>
+                <p>ขั้นตอนการเสนอคําร้องลาพักการศึกษา<br>
+                    1. นักศึกษากรอกคําร้องขอลาพักการศึกษา<br>
+                    2. เสนอคําร้องต่อหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ<br>
+                    3. เสนอคําร้องต่อผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ (ชั้น 3 อาคารอํานวย ยศสุข)<br>
+                    4. เสนอคําร้องต่ออาจารย2ที่ปรึกษา (คณะที่นักศึกษาสังกัด)<br>
+                    5. เสนอคําร้องต่อประธานคณะกรรมการประจําหลักสูตร (คณะที่นักศึกษาสังกัด)<br>
+                    6. เสนอคําร้องต่อคณบดี เพื่ออนุมัติ (คณะที่นักศึกษาสังกัด)<br>
+                    7. นําคําร้องไปชําระเงิน (กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ)<br>
+                    8. นําคําร้องขอลาพักการศึกษา ที่ชําระเงินแล้ว (ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ)<br>
+                    เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป<br>
+                    9. เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันต่อไป </p>
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">ตกลง</button>
                 </div>
-
-
                 <!--from ผู้ปกครอง-->
-
-
-
+            </div>
         </form>
-
         <!--script-->
-
-
         <script>
             (function () {
                 'use strict'
@@ -370,8 +445,6 @@
                     })
             })()
         </script>
-
-
         <!--end script-->
 
 </body>
