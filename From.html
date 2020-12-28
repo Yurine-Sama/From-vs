@@ -18,10 +18,11 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    
+    <link rel="stlesheet" href="./IMG/">
   </head>
   <body>
     <!-- <form action="">
+
       ชื่อ
       <input type="text" name="fname" id="fname" pattern="[A-Za-z]{1,50}" maxlength="30" required>
 
@@ -46,24 +47,48 @@
 
     </form> -->
 
+    <!--Nav bar-->
+      <div class="container">
+        <div class="row ">
+          <div class="col-sm">
+            <img src="/IMG/มหาวิทยาลัยแม่โจ้_edit.png" alt="MJU logo" style="width: 6em;">
+          </div>
+          <div class="col-sm">
+            <h1>คำร้องขอลาพักการศึกษา</h>
+              <p class="text-center" style="font-size: 15px;">(สําหรับนักศึกษาที่ได้ศึกษามาแล้ว ไม่น้อยกว่าหนึ่งภาคการศึกษา)</p>
+          </div>
+          <div class="col-sm">
+          </div>
+        </div>
+      </div>
+    <!--end Nav bar-->
     <!--Name-->
+    
     <div class="container">
       <form action="" class="row row-col-4 g-3 needs-validation"novalidate>
-        <div class="col-md-5 position-relative">
-          <label for="inputname" class="form-label">ชื่อ</label>
-          <input type="text" class="form-control" pattern="[A-Za-z]" maxlength="20"  placeholder="First name" aria-label="First name" required>
+        <!--คำนำหน้า-->
+        <div class="col-md-1">
+          <label for="validationDefault04" class="form-label">คำนำหน้าชื่อ</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">นาย</option>
+            <option>นาง</option>
+            <option>นางสาว</option>
+          </select>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="inputfname" class="form-label">ชื่อ</label>
+          <input type="text"  class="form-control" pattern="[A-Za-z]" maxlength="20"  placeholder="First name" aria-label="First name" required>
           <div class="invalid-tooltip">
             กรุณาเขียนชื่อ.
           </div>
-        </div>
-        
-        <div class="col-md-5 position-relative">
-          <label for="inputname" class="form-label">นามสกุล</label>
-          <input type="text" class="form-control" placeholder="Last name" pattern="[A-Za-z]" maxlength="20" aria-label="Last name" required>
+        </div>    
+        <div class="col-md-4 position-relative">
+          <label for="inputlname" class="form-label">นามสกุล</label>
+          <input type="text"  class="form-control" pattern="[A-Za-z]" maxlength="20"  placeholder="last name" aria-label="last name" required>
           <div class="invalid-tooltip">
-            กรุณาเขียนนามสกุล.
+            กรุณาเขียนชื่อ.
           </div>
-        </div>
+        </div>    
         <div class="col-sm-1 ">
           <label for="inputState" class="form-label">ภาคเรียน</label>
           <select class="form-select" id="autoSizingSelect">
@@ -71,21 +96,22 @@
             <option value="2">2</option>
           </select>
         </div>
-        <div class="col">
-          <input  type="date" id="start" name="trip-start"
+        <div class="col-sm-1">
+          <label for="today" class="form-label">วัน/เดือน/ปี</label>
+          <input  type="date" id="date" name="trip-start"
           value="2020-012-21"
-          min="2020-01-01" max="20-12-31" >
+          min="2020-01-01" max="20-12-31" required>
         </div>
         <div class="col-12 col-md-5 position-relative">
           <label for="idstudent" class="form-label">รหัสนศ</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="62xxxxxxxx" required>
+          <input type="text" class="form-control" id="inputAddress" placeholder="62xxxxxxxx" pattern="[0-9]+" maxlength="10"  required>
           <div class="invalid-tooltip">
             กรุณากรอกรหัสนศ.
           </div>
         </div>
         <div class="col-12 col-md-5 position-relative">
           <label for="phonenum" class="form-label">เบอร์โทร</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="012-456-789" required>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="012346789" pattern="[0-9]+" maxlength="10" required>
           <div class="invalid-tooltip">
             กรุณากรอกเบอร์โทร.
           </div>
@@ -96,7 +122,24 @@
         </div>
         <div class="col-md-6">
           <label for="band" class="form-label">คณะ</label>
-          <input type="text" class="form-control" id="inputCity">
+          <select>
+            <option value="---เลือกคณะ---">---เลือกคณะ---</option>
+            <option value="คณะผลิตกรรมการเกษตร">คณะผลิตกรรมการเกษตร</option>
+            <option value="คณะสัตวศาสตร์และเทคโนโลยี">คณะสัตวศาสตร์และเทคโนโลยี</option>
+            <option value="คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม">คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม</option>
+            <option value="คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+            <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
+            <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+            <option value="คณะสารสนเทศและการสื่อสาร">คณะสารสนเทศและการสื่อสาร</option>
+            <option value="คณะวิศวกรรมและอุตสาหกรรมเกษตร">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+            <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+            <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+            <option value="คณะพัฒนาการท่องเที่ยว">คณะพัฒนาการท่องเที่ยว</option>
+            <option value="วิทยาลัยบริหารศาสตร์">วิทยาลัยบริหารศาสตร์</option>
+            <option value="วิทยาลัยพลังงานทดแทน">พลังงานทดแทน</option>
+            <option value="แม่โจ้-แพร่ เฉลิมพระเกียรติ">แม่โจ้-แพร่ เฉลิมพระเกียรติ </option>
+            <option value="แม่โจ้-ชุมพร">แม่โจ้-ชุมพร</option>
+          </select>
         </div>
         <div class="col-md-4">
           <label for="inputState" class="form-label">หลักสูตรปริญาตรี</label>
@@ -108,7 +151,7 @@
           </select>
         </div>
         <div class="form-floating position-relative">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"  required></textarea>
           <label for="floatingTextarea2">มีความประสงค์จะขอลาพักการศึกษาเนื่องจาก</label>
           <div class="invalid-tooltip">
             กรอกความประสงค์จะลาพัก
@@ -118,6 +161,8 @@
           <button type="submit" class="btn btn-primary">ตกลง</button>
         </div>
       </form>
+
+      <!--script-->
 
       <script>
         (function () {
@@ -140,6 +185,8 @@
     })
 })()
       </script>
+
+      <!--end script-->
 
   </body>
 </html>
